@@ -1,0 +1,199 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 70%;
+    height: 70vh;
+    margin: 40px auto;
+    background-color: aqua;
+    font-family: 'roboto';
+}
+h1{
+    font-size: 45px;
+}
+.game{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.player1,.player2 {
+    flex: 1;
+    height: 70vh;
+    text-align: center;
+    padding: 5% 0;
+}
+.player1{
+    background-color: #01e08f;
+}
+.player2{
+    background-color: #e3e2de;
+}
+.current span{
+    display: block;
+}
+.current{
+    margin: auto;
+    margin-top: 30%;
+    font-size: 25px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #00376f;
+    color: white;
+    border-radius: 10px;
+}
+
+.main-score1 ,.main-score2{
+    display: block;
+    margin-top: 10%;
+    font-size: 90px;
+}
+.center{
+    width: 350px;
+    height: 70vh;
+    padding-top: 40px;
+    position: absolute;
+    top: 40px;
+    left: 39.7%;
+    text-align: center;
+}
+
+.dice{
+    display: flex;
+    margin-top: 40px;
+    padding: 0%;
+}
+.dice img{
+    border-radius: 15px;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    flex: 1;
+    margin: 5px;
+}
+.center div:nth-of-type(1){
+    padding: 10px 25px;
+    width: fit-content;
+    font-family: 'roboto';
+    font-size: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.but-btn {
+    margin-top: 90px;
+}
+.but-btn div{
+    padding: 10px 25px;
+    width: fit-content;
+    font-family: 'roboto';
+    font-size: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.center i{
+    margin-right: 15px;
+    font-size: 20px;
+    color: tomato;
+}
+.center div:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 3px gray,2px 2px 15px 3px gray;
+}
+.winner {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'roboto';
+    text-shadow: 3px 3px 15px yellow;
+}
+
+/* ***************************************************************************************************************
+                                                  First Page : Rules
+*************************************************************************************************************** */
+
+.form{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+input{
+    width: 70%;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    outline: 0 !important;
+}
+input[type="submit"] {
+    outline: 0 !important;
+    display: block;
+    width: 70%;
+    border: none;
+    margin: auto;
+    height: 45px;
+    border-radius: 15px;
+    background-color: tomato;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"] :hover{
+    background-color: rgb(223, 97, 75);
+    color: white;
+}
+ul{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    list-style-type: circle;
+    font-size: 20px;
+    line-height: 1.3;
+}
+li{
+    margin-bottom: 20px;
+}
+.container h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 0%;
+    padding-top: 20px;
+    font-family: 'roboto';
+    
+}
+.bck-color{
+    background-color: #b2cecf;
+    margin-top: 0%;
+}
+
+.back{
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: tomato;
+    font-size: 25px;
+    font-family: 'roboto';
+    border-radius: 10px;
+    outline: 0 !important;
+    position: absolute;
+    top: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.back:hover{
+    background-color: rgb(219, 86, 63);
+    box-shadow: 2px 2px 5px 3px gray;
+}
+
+  
+ 

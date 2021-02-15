@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <script src="https://kit.fontawesome.com/bb0dd2be61.js"></script>
+    <title>Pig Game</title>
+    <link rel="shortcut icon" type="image/jpg" href="/Images/fav.png">
+</head>
+<body>
+
+    <!-- the container -->
+
+        <div class="container" id="second">
+            <div class="game">
+                <div class="player1">
+                    <h1 class="ply1">Player 1</h1>
+                    <span class="main-score1">0</span>
+                    <div class="current">
+                        <span>Current Score</span>
+                        <span class="current-score1">0</span>
+                    </div>
+                </div>
+                <div class="player2">
+                    <h1 class="ply2">Player 2</h1>
+                    <span class="main-score2">0</span>
+                    <div class="current">
+                        <span>Current Score</span>
+                        <span class="current-score2">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div onclick="newGame()"><i class="fas fa-plus-circle"></i>New Game</div>
+                <section class="dice">
+                    <img src="/Images/dice-4.png" class="dice1"> 
+                    <img src="/Images/dice-5.png" class="dice2"> 
+                </section>
+                <section class="but-btn">
+                    <div onclick="diceRandom()"><i class="fas fa-dice"></i>Roll Dice</div>
+                    <div onclick="hold()"><i class="fas fa-save"></i>Hold </div>
+                </section>
+            </div>
+        </div>
+            <div class="winner">Congrats <span class="ply">ply</span> You Win!</div>
+        
+        <div class="container bck-color" id="first">
+            <h3>Dice Game Rules</h3>
+            <ul >
+                <li>
+                    If the player rolls one of the dices a 1 or double 6, they score nothing and it becomes the next player's turn.
+                </li> 
+                <li>
+                    If the player rolls any other numbers, it is added to their turn total and the player's turn continues.
+                </li>
+                <li>
+                    If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+                </li>
+                <li>
+                    The first player to score(100 Default you can change it) or more points wins.
+                </li>
+            </ul>
+            <div class="form">
+                <input type="text" placeholder="Player 1" id="player1">
+                <input type="text" placeholder="Player 2" id="player2">
+                <input type="number" placeholder="Score To Win" id="score">
+                <input type="submit" value="Start Now" onclick="startgame()"></input>
+            </div>
+        </div>
+        <div class="back" onclick="back()">
+            <span>↩</span> Back
+        </div>
+        
+
+            <script src="/Js/Script.js"></script>
+
+</body>
+</html>
