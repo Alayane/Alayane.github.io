@@ -63,27 +63,31 @@ function player1(){
         document.querySelector(".current-score1").textContent = '0'; 
         lastValue=0;
         Player=0;
+        document.querySelector(".player2").style.background='#01e08f';
+        document.querySelector(".player1").style.background='#e3e2de';
         
     } else{
+        document.querySelector(".player1").style.background='#01e08f';
+        document.querySelector(".player2").style.background='#e3e2de';
         dice=dice1 + dice2;
         lastValue+=eval(dice);
         document.querySelector(".current-score1").textContent = lastValue;    
     }
-    document.querySelector(".player1").style.background='#01e08f';
-    document.querySelector(".player2").style.background='#e3e2de';
 }
 function player2(){
     if (dice1===1 || dice2===1 || dice1===6 && dice2===6) {
         document.querySelector(".current-score2").textContent = '0'; 
         lastValue=0;
         Player=1;
+        document.querySelector(".player1").style.background='#01e08f';
+        document.querySelector(".player2").style.background='#e3e2de';
     } else{
+        document.querySelector(".player2").style.background='#01e08f';
+        document.querySelector(".player1").style.background='#e3e2de';
         dice=dice1 + dice2;
         lastValue+=eval(dice);
         document.querySelector(".current-score2").textContent = lastValue;
     }
-    document.querySelector(".player2").style.background='#01e08f';
-    document.querySelector(".player1").style.background='#e3e2de';
 }
 
 function hold(){
@@ -95,22 +99,25 @@ function hold(){
         document.querySelector(".current-score1").textContent = '0'; 
         lastValue=0;
         Player=2;
+        document.querySelector(".player2").style.background='#01e08f';
+        document.querySelector(".player1").style.background='#e3e2de';
         if(mainScore1>=score)
         {
-            document.querySelector(".player1").style.background='#01e08f';
-            document.querySelector(".player2").style.background='#e3e2de';
             document.querySelector(".ply").textContent = ply1;
             document.querySelector(".winner").style.display="";
             document.querySelector(".winner").style.visibility="visible";
             document.querySelector(".but-btn").style.visibility="hidden";
+            document.querySelector(".player1").style.background='#01e08f';
+            document.querySelector(".player2").style.background='#e3e2de';
         }
     }else{
-        
         mainScore2+=eval(lastValue);
         document.querySelector(".main-score2").textContent=mainScore2;
         document.querySelector(".current-score2").textContent = '0'; 
         lastValue=0;
         Player=1;
+        document.querySelector(".player1").style.background='#01e08f';
+        document.querySelector(".player2").style.background='#e3e2de';
         if(mainScore2>=score)
         {
             document.querySelector(".player2").style.background='#01e08f';
@@ -123,7 +130,6 @@ function hold(){
     }
 }
 function newGame(){
-    
     document.querySelector(".player1").style.background='#01e08f';
     document.querySelector(".player2").style.background='#e3e2de';
     document.querySelector(".but-btn").style.visibility="visible";
