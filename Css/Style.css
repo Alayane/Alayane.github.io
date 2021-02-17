@@ -205,17 +205,23 @@ li{
     box-shadow: 0 5px 7px rgb(0 0 0 / 50%);
 
 }
-
-.fa-github{
-    top :50px;
-    right: 20px;
+.social{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    transform: scale(3);
+    top: 50px;
+    right: 40px;
 }
- a{
+.social i{
     color: rgb(239 218 185);
+    transform: scale(2);
+    margin-bottom: 35px;
+}
+.social a{
     text-decoration: none;
 }
+
+
 
 
   

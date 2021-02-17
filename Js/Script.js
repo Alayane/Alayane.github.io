@@ -7,14 +7,12 @@ document.querySelector(".winner").style.visibility = "hidden";
 document.querySelector(".but-btn").style.visibility="visible";
 
 
-
 var  dice ,dice1,dice2,score, lastValue=0;
 var Player=1;
 var mainScore1=0;
 var mainScore2=0;
 var ply1,ply2;
-
-
+var claps=new Audio("/audio/claps.3gpp");
 function startgame(){ 
     document.querySelector("title").innerHTML="Dice Game | Play"  
     ply1= document.getElementById("player1").value;
@@ -103,6 +101,7 @@ function hold(){
         document.querySelector(".player1").style.background='#efdab9';
         if(mainScore1>=score)
         {
+            claps.play();
             document.querySelector(".ply").textContent = ply1;
             document.querySelector(".winner").style.display="";
             document.querySelector(".winner").style.visibility="visible";
@@ -120,6 +119,7 @@ function hold(){
         document.querySelector(".player2").style.background='#efdab9';
         if(mainScore2>=score)
         {
+            claps.play();
             document.querySelector(".player2").style.background='#ffd152';
             document.querySelector(".player1").style.background='#efdab9';
             document.querySelector(".ply").textContent = ply2;
@@ -130,9 +130,9 @@ function hold(){
     }
 }
 function newGame(){
-    
-        document.querySelector(".player1").style.background='#ffd152';
-        document.querySelector(".player2").style.background='#efdab9';
+    claps.pause();
+    document.querySelector(".player1").style.background='#ffd152';
+    document.querySelector(".player2").style.background='#efdab9';
     document.querySelector(".but-btn").style.visibility="visible";
     document.querySelector(".dice1").style.visibility="hidden";
     document.querySelector(".dice2").style.visibility="hidden";
@@ -146,6 +146,7 @@ function newGame(){
     mainScore2=0;
     mainScore1=0;
 }
+
 
 
 
