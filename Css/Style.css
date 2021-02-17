@@ -10,7 +10,6 @@ body{
     max-width: 70%;
     height: fit-content;
     margin: 40px auto 0 auto;
-    background-color: aqua;
     font-family: 'roboto';
     border-radius: 20px;
     box-shadow: 0px 20px 30px rgb(0 0 0 / 50%);
@@ -31,11 +30,11 @@ h1{
     padding: 5% 0;
 }
 .player1{
-    background-color: #01e08f;
+    background-color: #ffd152;
     border-radius: 20px 0 0 20px;
 }
 .player2{
-    background-color: #e3e2de;
+    background-color: rgb(239 218 185);
     border-radius: 0 20px 20px 0;
 }
 .current span{
@@ -206,6 +205,18 @@ li{
     box-shadow: 0 5px 7px rgb(0 0 0 / 50%);
 
 }
+
+.fa-github{
+    top :50px;
+    right: 20px;
+    position: absolute;
+    transform: scale(3);
+}
+ a{
+    color: rgb(239 218 185);
+    text-decoration: none;
+}
+
 
   
  
