@@ -3,13 +3,17 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
+body{
+    background-color:  #343233;
+}
 .container{
     max-width: 70%;
     height: fit-content;
     margin: 40px auto 0 auto;
     background-color: aqua;
     font-family: 'roboto';
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px rgb(0 0 0 / 50%);
 }
 h1{
     font-size: 45px;
@@ -28,9 +32,11 @@ h1{
 }
 .player1{
     background-color: #01e08f;
+    border-radius: 20px 0 0 20px;
 }
 .player2{
     background-color: #e3e2de;
+    border-radius: 0 20px 20px 0;
 }
 .current span{
     display: block;
@@ -42,7 +48,7 @@ h1{
     padding: 10px;
     width: 200px;
     text-align: center;
-    background-color: #00376f;
+    background-color: #44504d;
     color: white;
     border-radius: 10px;
 }
@@ -58,22 +64,22 @@ h1{
     padding-top: 40px;
     position: absolute;
     top: 40px;
-    left: 37%;
+    left: 36.9%;
     text-align: center;
 }
 
 .dice{
     display: flex;
-    margin: 40px 15px 0px 15px;
+    margin: 70px auto 25px;
     padding: 0%;
+    width: 210px;
 }
 .dice img{
-    border-radius: 15px;
-    margin: auto;
-    width: 150px;
-    height: 150px;
     flex: 1;
-    margin: 5px;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin: auto 5px;
 }
 .center div:nth-of-type(1){
     padding: 10px 25px;
@@ -101,17 +107,18 @@ h1{
 .center i{
     margin-right: 15px;
     font-size: 20px;
-    color: tomato;
+    color: #eb4d4d;
 }
 .center div:hover{
     cursor: pointer;
-    box-shadow: 2px 2px 15px 3px gray,2px 2px 15px 3px gray;
+    box-shadow: 2px 2px 15px 3px #3432331f,2px 2px 15px 3px #3432331f;
 }
 .winner {
     text-align: center;
     font-size: 45px;
     font-family: 'roboto';
-    text-shadow: 3px 3px 15px yellow;
+    color: white;
+    /* text-shadow: 3px 3px 15px yellow; */
 }
 
 /* ***************************************************************************************************************
@@ -142,13 +149,13 @@ input[type="submit"] {
     margin: auto;
     height: 45px;
     border-radius: 15px;
-    background-color: tomato;
+    background-color: #ffd152;
     font-size: 20px;
-    color: white;
+    color: #343233;
     cursor: pointer;
 }
 input[type="submit"] :hover{
-    background-color: rgb(223, 97, 75);
+    background-color: #fdcb41;
     color: white;
 }
 ul{
@@ -171,18 +178,21 @@ li{
     
 }
 .bck-color{
-    background-color: #b2cecf;
+    background-color: #554945;
+    color: white;
     margin-top: 0%;
     height: 80vh;
 }
-
+.back span{
+    font-size: 24px;
+}
 .back{
     width: fit-content;
     padding: 10px;
     text-align: center;
-    color: white;
-    background-color: tomato;
-    font-size: 25px;
+    color: #343233;
+    background-color: #ffd152;
+    font-size: 20px;
     font-family: 'roboto';
     border-radius: 10px;
     outline: 0 !important;
@@ -192,8 +202,9 @@ li{
     cursor: pointer;
 }
 .back:hover{
-    background-color: rgb(219, 86, 63);
-    box-shadow: 2px 2px 5px 3px gray;
+    background-color: #fdcb41;
+    box-shadow: 0 5px 7px rgb(0 0 0 / 50%);
+
 }
 
   

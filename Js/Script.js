@@ -63,12 +63,12 @@ function player1(){
         document.querySelector(".current-score1").textContent = '0'; 
         lastValue=0;
         Player=0;
-        document.querySelector(".player2").style.background='#01e08f';
-        document.querySelector(".player1").style.background='#e3e2de';
+        document.querySelector(".player2").style.background='#ffd152';
+        document.querySelector(".player1").style.background='#efdab9';
         
     } else{
-        document.querySelector(".player1").style.background='#01e08f';
-        document.querySelector(".player2").style.background='#e3e2de';
+        document.querySelector(".player1").style.background='#ffd152';
+        document.querySelector(".player2").style.background='#efdab9';
         dice=dice1 + dice2;
         lastValue+=eval(dice);
         document.querySelector(".current-score1").textContent = lastValue;    
@@ -79,11 +79,11 @@ function player2(){
         document.querySelector(".current-score2").textContent = '0'; 
         lastValue=0;
         Player=1;
-        document.querySelector(".player1").style.background='#01e08f';
-        document.querySelector(".player2").style.background='#e3e2de';
+        document.querySelector(".player1").style.background='#ffd152';
+        document.querySelector(".player2").style.background='#efdab9';
     } else{
-        document.querySelector(".player2").style.background='#01e08f';
-        document.querySelector(".player1").style.background='#e3e2de';
+        document.querySelector(".player2").style.background='#ffd152';
+        document.querySelector(".player1").style.background='#efdab9';
         dice=dice1 + dice2;
         lastValue+=eval(dice);
         document.querySelector(".current-score2").textContent = lastValue;
@@ -99,16 +99,16 @@ function hold(){
         document.querySelector(".current-score1").textContent = '0'; 
         lastValue=0;
         Player=2;
-        document.querySelector(".player2").style.background='#01e08f';
-        document.querySelector(".player1").style.background='#e3e2de';
+        document.querySelector(".player2").style.background='#ffd152';
+        document.querySelector(".player1").style.background='#efdab9';
         if(mainScore1>=score)
         {
             document.querySelector(".ply").textContent = ply1;
             document.querySelector(".winner").style.display="";
             document.querySelector(".winner").style.visibility="visible";
             document.querySelector(".but-btn").style.visibility="hidden";
-            document.querySelector(".player1").style.background='#01e08f';
-            document.querySelector(".player2").style.background='#e3e2de';
+            document.querySelector(".player1").style.background='#ffd152';
+            document.querySelector(".player2").style.background='#efdab9';
         }
     }else{
         mainScore2+=eval(lastValue);
@@ -116,12 +116,12 @@ function hold(){
         document.querySelector(".current-score2").textContent = '0'; 
         lastValue=0;
         Player=1;
-        document.querySelector(".player1").style.background='#01e08f';
-        document.querySelector(".player2").style.background='#e3e2de';
+        document.querySelector(".player1").style.background='#ffd152';
+        document.querySelector(".player2").style.background='#efdab9';
         if(mainScore2>=score)
         {
-            document.querySelector(".player2").style.background='#01e08f';
-            document.querySelector(".player1").style.background='#e3e2de';
+            document.querySelector(".player2").style.background='#ffd152';
+            document.querySelector(".player1").style.background='#efdab9';
             document.querySelector(".ply").textContent = ply2;
             document.querySelector(".winner").style.display="";
             document.querySelector(".winner").style.visibility="visible";
@@ -130,8 +130,9 @@ function hold(){
     }
 }
 function newGame(){
-    document.querySelector(".player1").style.background='#01e08f';
-    document.querySelector(".player2").style.background='#e3e2de';
+    
+        document.querySelector(".player1").style.background='#ffd152';
+        document.querySelector(".player2").style.background='#efdab9';
     document.querySelector(".but-btn").style.visibility="visible";
     document.querySelector(".dice1").style.visibility="hidden";
     document.querySelector(".dice2").style.visibility="hidden";
