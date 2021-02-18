@@ -125,8 +125,10 @@ h1{
 *************************************************************************************************************** */
 
 .form{
-    width: 700px;
+    width: 70%;
     margin: auto;
+    height: auto;
+    padding-bottom: 40px;
     text-align: center;
     padding-top: 15px;
 }
@@ -141,13 +143,8 @@ input{
     outline: 0 !important;
 }
 input[type="submit"] {
-    outline: 0 !important;
-    display: block;
-    width: 70%;
-    border: none;
     margin: auto;
-    height: 45px;
-    border-radius: 15px;
+    display: block;
     background-color: #ffd152;
     font-size: 20px;
     color: #343233;
@@ -181,6 +178,7 @@ li{
     color: white;
     margin-top: 0%;
     height: 80vh;
+    height: fit-content;
 }
 .back span{
     font-size: 24px;
@@ -220,7 +218,6 @@ li{
 .social a{
     text-decoration: none;
 }
-
 
 
 

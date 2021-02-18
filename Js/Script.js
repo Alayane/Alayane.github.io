@@ -13,6 +13,8 @@ var mainScore1=0;
 var mainScore2=0;
 var ply1,ply2;
 var claps=new Audio("/audio/claps.3gpp");
+
+
 function startgame(){ 
     document.querySelector("title").innerHTML="Dice Game | Play"  
     ply1= document.getElementById("player1").value;
