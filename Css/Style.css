@@ -45,7 +45,7 @@ h1{
     margin-top: 30%;
     font-size: 25px;
     padding: 10px;
-    width: 200px;
+    width: 50%;
     text-align: center;
     background-color: #44504d;
     color: white;
@@ -58,12 +58,13 @@ h1{
     font-size: 90px;
 }
 .center{
-    width: 350px;
+    width: 30%;
     height: 70vh;
     padding-top: 40px;
     position: absolute;
-    top: 40px;
-    left: 36.9%;
+    top: 40%;
+    left: 49.65%;
+    transform: translate(-50%,-50%);
     text-align: center;
 }
 
@@ -218,7 +219,6 @@ li{
 .social a{
     text-decoration: none;
 }
-
 
 
   
